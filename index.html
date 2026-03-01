@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-       body{background-color: #121212; color: white; font-family: sans-serif;}
-        h1{display: inline;
-            margin-left: 450px;
-            font-size: 70px;
-            vertical-align: top;}
-        h2{display: inline;
-            margin-left: 600px;
-            font-size: 70px;
-            vertical-align: top;}
-        h3{position: absolute;  left: 370px; top: 200px;}
-        h4{position: absolute;  left: 1650px; top: 200px;}
-        h5{ font-size: 70px;
-             margin-left: 2600px;
-             }
-        </style>
+    <title>แบบฟอร์มลงทะเบียน</title>
+    <style>title{font-size: 100px} 
+    </style>
 </head>
 <body>
-    <h1>รูปจากโฟลเดอร์ปัจจุบัน</h1><h2>รูปจากอีกโฟลเดอร์</h2>
-    <h3><img src="./manggorn.jpg" alt="" width="900"></h3>
-    <h4><img src="../ประวัติ/manggorn2.jpg" alt="" width="900"></h4>
-    <h5>นายปิยะภัทร สีแสง 6812732138</h5>
+    <div class="form-container">
+    <h2>แบบฟอร์มลงทะเบียน</h2>
+    <form>
+        <label for="fname">ชื่อ-นามสกุล:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="ใส่ชื่อของคุณที่นี่"><br><br>
+
+        <label for="email">อีเมล:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+
+        <label>เพศ:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">ชาย</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">หญิง</label><br><br>
+
+        <label for="subject">หัวข้อที่สนใจ:</label><br>
+        <select id="subject" name="subject">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="python">Python</option>
+        </select><br><br>
+
+        <input type="submit" value="ส่งข้อมูล">
+    </form>
+</div>   
 </body>
 </html>
